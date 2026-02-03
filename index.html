@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Dead | EGY Yazılım</title>
+    <style>
+        :root {
+            --primary-red: #8b0000;
+            --dark-bg: #0a0a0a;
+            --card-bg: #161616;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Ana Görsel Alanı */
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: radial-gradient(circle, rgba(139,0,0,0.15) 0%, rgba(10,10,10,1) 70%);
+        }
+
+        h1 {
+            font-size: 4rem;
+            letter-spacing: 12px;
+            margin: 0;
+            color: var(--primary-red);
+            text-shadow: 0 0 30px rgba(139, 0, 0, 0.5);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #888;
+            margin: 20px 0 40px;
+            letter-spacing: 2px;
+        }
+
+        /* Butonlar */
+        .btn-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: 0.4s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-main {
+            background-color: var(--primary-red);
+            color: white;
+            border: 1px solid var(--primary-red);
+        }
+
+        .btn-main:hover {
+            background-color: #ff0000;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-red);
+            border: 1px solid var(--primary-red);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(139, 0, 0, 0.1);
+        }
+
+        /* Alt Kısım */
+        footer {
+            padding: 40px 20px;
+            background-color: #000;
+            border-top: 1px solid #222;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        footer a {
+            color: #777;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover { color: var(--primary-red); }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>BLACK DEAD</h1>
+        <p class="tagline">KARANLIĞIN KALBİNE YOLCULUK</p>
+        
+        <div class="btn-container">
+            <a href="#" class="btn btn-main">Google Play'de İncele</a>
+            <a href="privacy.html" class="btn btn-outline">Gizlilik İlkesi</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 EGY Yazılım ve Bilişim Teknolojileri. Tüm hakları saklıdır.</p>
+        <p>Ankara, Türkiye | info@egyyazilim.com</p>
+    </footer>
+
+</body>
+</html>
